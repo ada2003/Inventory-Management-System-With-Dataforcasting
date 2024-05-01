@@ -12,11 +12,17 @@ application of inventory management and demand forecasting techniques.”
 # 2  Technologies used
 [![My Skills](https://skillicons.dev/icons?i=react,nodejs,flask,mongodb,express)](https://skillicons.dev)
 
-Express js - Node.js web framework
+Express js 
 
-React js - a client-side JavaScript framework
+MongoDB
 
-Node js - the premier JavaScript web server
+React js  
+
+express
+
+Node js 
+
+Flask
 
 # 3 Features
 1 )Inventory Tracking:
