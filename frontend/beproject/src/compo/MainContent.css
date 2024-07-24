@@ -1,0 +1,87 @@
+/* MainContent.css */
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  background-color: #ffffff;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  width: 250px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+.card p {
+  margin-bottom: 0;
+  font-size: 1.5rem;
+  color: #007bff;
+}
+
+.product-list-container {
+  margin-top: 20px;
+  width: 784px; /* Set the width of the product list container */
+}
+
+.product-list {
+  display: flex; /* Display products horizontally */
+  justify-content: center; /* Center products horizontally */
+}
+
+.product-list h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.product-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 784px;
+}
+
+.product-list ul li {
+  background-color: #ffffff;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 784px;
+  display: flex;
+  justify-content: space-between; /* Align items with space between them */
+  align-items: center; /* Center items vertically */
+}
+
+.product-list ul li p {
+  margin: 5px 0;
+  color: #333;
+}
+
+.delete-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: red;
+}

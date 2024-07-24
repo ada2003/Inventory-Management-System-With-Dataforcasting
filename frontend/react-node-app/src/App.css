@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla&family=Montserrat&family=Poppins&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+.App {
+  text-align: center;
+  display: grid;
+  grid-template-columns: 0.5fr 2fr;
+}
+
+.navbar {
+  box-shadow: 10px 0px 20px lightgray;
+  border-right-width: 80%;
+  height: 100vh;
+  margin: 0;
+}
+
+.navbar .items {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  text-align: left;
+}
+
+.navbar .items li {
+  margin: 1px 0;
+  padding: 6px;
+  cursor: pointer;
+}
+
+.navbar .items li a{
+  text-decoration: none;
+  color: black;
+}
+
+.navbar .items li:hover {
+  background-color: rgb(178, 176, 176);
+}
+
+.navbar .items {
+  padding: 0;
+  margin: 20px;
+}
+.navbar .items li:first-child {
+  padding-left: 60px;
+  background-color: rgb(77, 77, 241);
+  height: 100px;
+  background-color: transparent;
+  border-radius: 20%;
+  margin: 2px;
+  margin-bottom: 50px;
+}
+
+.navbar .items li:first-child img {
+  height: inherit;
+  width: inherit;
+  object-fit: contain;
+  border-radius: 20%;
+  align-self: center;
+}
+
+.navbar .items li:first-child span {
+  float: right;
+  top: 40px;
+  position: relative;
+  right: 30px;
+}
+
+.navbar .items li:nth-child(2)::before {
+  content: "";
+  position: relative;
+  width: 50px;
+  height: 50px;
+  background-image: url(./components/images/dashboard.svg);
+  display: block;
+}
+
+.navbar .items li:nth-child(3)::before {
+  content: "";
+  position: relative;
+  width: 50px;
+  height: 50px;
+  background-image: url(./components/images/productList.svg);
+  display: block;
+}
+
+.navbar .items li:nth-child(4)::before {
+  content: "";
+  position: relative;
+  width: 50px;
+  height: 50px;
+  background-image: url(./components/images/addProduct.svg);
+  display: block;
+}
+
+.navbar .items li:nth-child(5)::before {
+  content: "";
+  position: relative;
+  width: 50px;
+  height: 50px;
+  background-image: url(./components/images/account.svg);
+  display: block;
+}
+
+.navbar .items li:nth-child(6)::before {
+  content: "";
+  position: relative;
+  width: 50px;
+  height: 50px;
+  background-image: url(./components/images/reportBug.svg);
+  display: block;
+}
+
+.navbar .items li:nth-child(2) span {
+  position: relative;
+  float: left;
+  bottom: 35px;
+  left: 60px;
+}
+
+.navbar .items li:nth-child(3) span {
+  position: relative;
+  float: left;
+  bottom: 35px;
+  left: 60px;
+}
+
+.navbar .items li:nth-child(4) span {
+  position: relative;
+  float: left;
+  bottom: 35px;
+  left: 60px;
+}
+
+.navbar .items li:nth-child(5) span {
+  position: relative;
+  float: left;
+  bottom: 35px;
+  left: 60px;
+}
+
+.navbar .items li:nth-child(6) span {
+  position: relative;
+  float: left;
+  bottom: 35px;
+  left: 60px;
+}
+
+.dashboard{
+  overflow: hidden;
+}
+
+.dashboard h1{
+  padding: 30px;
+}
+
+.dashboard .items{
+  display: flex;
+  list-style: none;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.dashboard .items > div{
+  cursor: pointer;
+  padding: 10px 5%;
+  background-color: antiquewhite;
+}
+
+.dashboard .items > div:hover{
+  transform: translateY(-15px);
+}
+
+.dashboard .items > div:active{
+  background-color: rgb(251, 219, 178);
+}
+
+.piechart {
+  margin-top: 300px;
+  display: block;
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-image: conic-gradient(pink 70deg, lightblue 0 235deg, orange 0);
+}
+
+.analytics,
+.piechart {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}

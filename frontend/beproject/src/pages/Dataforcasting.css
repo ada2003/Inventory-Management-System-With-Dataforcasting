@@ -1,0 +1,32 @@
+.product-container {
+    margin-top: 20px;
+    width: 100%; /* Ensure the container takes full width */
+    overflow-x: auto; /* Enable horizontal scrolling if the containers exceed the width */
+  }
+  
+  .product-grid {
+    display: flex;
+    gap: 20px;
+    overflow: auto; /* Enable scrolling if the content overflows horizontally */
+  }
+  
+  .product-item {
+    width: 200px; /* Set a fixed width for each product container */
+    border: 1px solid #ccc;
+    padding: 10px;
+    transition: background-color 0.3s; /* Add transition for smooth hover effect */
+    background-color: #f9f9f9; /* Set background color for each container */
+  }
+  
+  .product-item:hover {
+    background-color: #e5e5e5; /* Change background color on hover */
+  }
+  
+  .product-name {
+    font-weight: bold;
+  }
+  
+  .inventory-need {
+    margin-top: 5px;
+  }
+  

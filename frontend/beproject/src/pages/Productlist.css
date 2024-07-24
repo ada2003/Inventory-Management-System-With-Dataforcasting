@@ -1,0 +1,39 @@
+.product-list-page {
+  display: flex;
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 20px;
+  width: calc(100% - 250px); /* Subtract the width of the sidebar */
+}
+.product-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  padding: 20px;
+  border-radius: 10px;
+  width: 200px; /* Set a fixed width for the card */
+}
+
+.product-card img {
+  width: 100%; /* Ensure the image takes the full width of the card */
+  height: 200px; /* Set a fixed height for the image */
+  object-fit: cover; /* Ensure the image covers the entire space */
+  border-radius: 10px 10px 0 0; /* Apply border-radius only to the top */
+}
+
+
+.product-info h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+.product-info p {
+  margin-bottom: 5px;
+}
